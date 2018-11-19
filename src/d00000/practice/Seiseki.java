@@ -8,7 +8,7 @@ public class Seiseki {
 
     public boolean isPassing() {
         int total = presence + absence;
-        double rate = (double)presence / absence;
+        double rate = (double)presence / total;
         if (rate < 0.8) {
             return false;
         }
